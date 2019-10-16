@@ -1,0 +1,18 @@
+.Person {
+    width: 60%;
+    margin:auto;
+    border: 1px solid rgb(200, 88, 214);
+    background-blend-mode: color-burn;
+    
+    padding:10px;
+    text-align: center;
+    border-radius: 50px;
+    border-block-start-color: blueviolet;
+    border-block-start-width: thick;
+}
+
+@media (min-width: 500px) {
+    .Person {
+        width: 450px;
+    }
+}

@@ -7,7 +7,7 @@ const logo = (props) => (
     <div className={classes.Logo}>
         <img src={burgerLogo} alt='MyBurger'/>
     </div>
-)
+);
 
 
 export default logo;

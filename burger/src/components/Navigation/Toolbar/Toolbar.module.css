@@ -1,65 +1,62 @@
 .Toolbar {
-    height: 56px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #b3773f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 201;
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b3773f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 201;
 }
 
 .Toolbar nav {
-    height: 100%;
+  height: 100%;
 }
 
 .Logo {
-    height: 80%;
+  height: 80%;
 }
 
 @media (max-width: 499px) {
-    .DesktopOnly {
-        display: none;
-    }
+  .DesktopOnly {
+    display: none;
+  }
 }
 
 .DrawerToggle {
-    margin: 1em;
-    width: 40px;
-   
-  }
-  
-  .DrawerToggle:after, 
-  .DrawerToggle:before, 
-  .DrawerToggle div {
-    background-color: #fff;
-    border-radius: 3px;
-    content: '';
-    display: block;
-    height: 5px;
-    margin: 7px 0;
-    transition: all .2s ease-in-out;
-   
-  }
+  margin: 1em;
+  width: 40px;
+}
 
+.DrawerToggle:after,
+.DrawerToggle:before,
+.DrawerToggle div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
 
-  .DrawerToggle:hover:before {
-    transform: translateY(12px) rotate(135deg);
-  }
-  
-  .DrawerToggle:hover:after {
-    transform: translateY(-12px) rotate(-135deg);
-  }
-  
-  .DrawerToggle:hover div {
-    transform: scale(0);
-  }
+.DrawerToggle:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.DrawerToggle:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.DrawerToggle:hover div {
+  transform: scale(0);
+}
 @media (min-width: 500px) {
-    .DrawerToggle {
-        display: none;
-    }
+  .DrawerToggle {
+    display: none;
+  }
 }
